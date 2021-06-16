@@ -13,3 +13,14 @@
   display: flex;
   align-self: center;
 }
+
+/* Requisito 5 - Formulário  */
+#main-content {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
