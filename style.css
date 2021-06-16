@@ -13,3 +13,14 @@
   width: 675px;
   flex-direction: column;
 }
+
+/* Requisito 10 */
+#input-name {
+  flex-direction: row;
+  width: 200px;
+}
+
+#input-lastname {
+  flex-direction: row;
+  width: 200px;
+}
