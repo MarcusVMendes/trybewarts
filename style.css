@@ -35,11 +35,11 @@
 
 /* Requisito 10 */
 #input-name {
-    flex-direction: row;
-    width: 200px;
-  }
-  
+  flex-direction: row;
+  width: 200px;
+}
+
 #input-lastname {
-    flex-direction: row;
-    width: 200px;
+  flex-direction: row;
+  width: 200px;
 }
