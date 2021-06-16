@@ -8,6 +8,7 @@
   <title>Document</title>
 </head>
 <body>
+  <!-- Requisitos 1 a 4 -->
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts" class="trybewarts-header-logo">
     <h1 id='trybewarts-header-title'>Trybewarts</h1>
@@ -22,10 +23,12 @@
   <main id="main-content">
     <form action="" id="evaluation-form">
       <!-- Requisito 8 -->
-      <input type="text" placeholder="Nome" id="input-name" /> Nome
-      <input type="text" placeholder="Sobrenome" id="input-lastname" />
-        Sobrenome
-      <input type="text" placeholder="Email" id="input-email" /> Email
+      <label for="input-name">Nome</label>
+      <input type="text" placeholder="Nome" id="input-name" class="nome-sobrenome"/> 
+      <label for="input-lastname">Sobrenome</label>
+      <input type="text" placeholder="Sobrenome" id="input-lastname" class="nome-sobrenome" />
+      <label for="input-email">Email</label>
+      <input type="text" placeholder="Email" id="input-email"/> 
       <!-- Requisito 9 -->
       <select name="house" id="house">
         <option value="Gitnória" id="gitnoria-house"></option>
@@ -33,7 +36,64 @@
         <option value="Corvinode" id="corvinode-house"></option>
         <option value="Pytherina" id="pytherina-house"></option>
       </select>
+      <!-- Requisito 12 -->
+      <label for="" id='label-family'>Qual sua família?</label>
+      <input type="radio" name="family" value="Frontend" id="Frontend"> 
+      <label for="Frontend">Frontend</label>
+      <input type="radio" name="family" value="Backend" id="Backend">
+      <label for="Backend">Backend</label>
+      <input type="radio" name="family" value="FullStack" id="FullStack">
+      <label for="FullStack">FullStack</label>
+      <!-- Requisito 13 -->
+      <label for="" id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
+      <div class='checkbox-container'>
+        <input type="checkbox" name="check1" id="Hofs" value="HoFs" class="subject">
+        <label for="Hofs">HoFs</label>
+        <input type="checkbox" name="check2" id="Jest" value="Jest" class="subject">
+        <label for="Jest">Jest</label>
+        <input type="checkbox" name="check3" id="Promises" value="Promises" class="subject">
+        <label for="Promises">Promises</label>
+        <input type="checkbox" name="check4" id="React" value="React" class="subject">
+        <label for="React">React</label>
+        <input type="checkbox" name="check5" id="SQL" value="SQL" class="subject">
+        <label for="SQL">SQL</label>
+        <input type="checkbox" name="check6" id="Python" value="Python" class="subject">
+        <label for="Python">Python</label>
+      </div>
+      <!-- Requisito 14 -->
+      <div class="evaluator-container">
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
+        <input type="radio" name="rate" id="um" value="1">
+        <label for="um">1</label>
+        <input type="radio" name="rate" id="dois" value="2">
+        <label for="dois">2</label>
+        <input type="radio" name="rate" id="tres" value="3">
+        <label for="tres">3</label>
+        <input type="radio" name="rate" id="quatro" value="4">
+        <label for="quatro">4</label>
+        <input type="radio" name="rate" id="cinco" value="5"> 
+        <label for="cinco">5</label>
+        <input type="radio" name="rate" id="seis" value="6">
+        <label for="seis">6</label>
+        <input type="radio" name="rate" id="sete" value="7">
+        <label for="sete">7</label>
+        <input type="radio" name="rate" id="oito" value="8">
+        <label for="oito">8</label>
+        <input type="radio" name="rate" id="nove" value="9">
+        <label for="nove">9</label>
+        <input type="radio" name="rate" id="dez" value="10">
+        <label for="dez">10</label>
+      </div>
+      <!-- Requisito 15 -->
+      <label for="" class="textarea">Deixe seu comentário:</label>
+      <textarea name="comment-area" id="comment-area" cols="30" rows="10" maxlength="500"></textarea>
+      <!-- Requisito 16 -->
+      <div>
+        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" name="agreement-term" id="agreement">
+      </div>
     </form>
+    <div class="img-container"><img src="images/trybewarts-colored.svg" alt="Logo Trybewarts" id='trybewarts-forms-logo'></div>
   </main>
   <script src="script.js"></script>
 </body>
